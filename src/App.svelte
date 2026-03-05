@@ -1,5 +1,6 @@
 <script>
   import { fetchCorpusInfo } from './lib/api.js'
+  import Toolbar from './components/Toolbar.svelte'
   import Concordance from './sections/Concordance.svelte'
   import TokenFreqs from './sections/TokenFreqs.svelte'
   import TextTypeFreqs from './sections/TextTypeFreqs.svelte'
@@ -38,6 +39,7 @@
   }
 </script>
 
+<Toolbar />
 <header>
   <div class="header-inner">
     <h1>MQuery Vibes</h1>
@@ -101,7 +103,7 @@
   }
 
   header {
-    background: #1a3a5c;
+    background: #239cdd;
     color: white;
     padding: 0.75rem 1.5rem;
   }
@@ -153,8 +155,8 @@
     color: rgba(255,255,255,0.5);
   }
 
-  .corpus-selector input.input-ok   { border-color: #4ade80; }
-  .corpus-selector input.input-error { border-color: #f87171; }
+  .corpus-selector input.input-ok   { border-color: #50a934; }
+  .corpus-selector input.input-error { border-color: #e1257a; }
 
   .status-icon {
     position: absolute;
@@ -165,18 +167,18 @@
   }
 
   .status-icon.checking { color: rgba(255,255,255,0.6); letter-spacing: -0.1em; }
-  .status-icon.ok       { color: #4ade80; }
-  .status-icon.error    { color: #f87171; }
+  .status-icon.ok       { color: #50a934; }
+  .status-icon.error    { color: #e1257a; }
 
   .corpus-error-msg {
     font-size: 0.75rem;
-    color: #fca5a5;
+    color: #f07ab0;
     margin-top: 0.25rem;
     display: block;
   }
 
   nav {
-    background: #1a3a5c;
+    background: #239cdd;
     border-top: 1px solid rgba(255,255,255,0.15);
     display: flex;
     gap: 0;
@@ -201,7 +203,7 @@
 
   nav button.active {
     color: white;
-    border-bottom-color: #6ab0f5;
+    border-bottom-color: #e86d24;
   }
 
   main {
